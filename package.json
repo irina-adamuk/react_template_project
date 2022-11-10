@@ -7,8 +7,8 @@
     "start": "webpack serve --mode=development",
     "build": "webpack --mode=development",
     "lint": "npx eslint ./src --ext .js,.jsx --fix",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run -d build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
